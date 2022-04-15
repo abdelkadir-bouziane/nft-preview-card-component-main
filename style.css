@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  padding: 18px 18px 0 18px;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 310px;
+  padding: 18px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 9px 10px 20px rgba(0, 0, 0, 0.1),
+    0px 20px 10px 50px rgba(0, 0, 0, 0.07);
+}
+
+.img1 {
+  width: 100%;
+  border-radius: 7px;
+  display: block;
+  position: relative;
+}
+
+.img1:hover:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-image: url("images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card h1 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.card p {
+  font-size: 1em;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.card-infos {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(215, 52%, 70%, 0.3);
+}
+
+.eth span {
+  font-size: 0.9em;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.time span {
+  font-size: 0.9em;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.eth img,
+.time img {
+  height: 0.9em;
+  padding-right: 6px;
+}
+
+.eth,
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.author img {
+  height: 2em;
+  margin-right: 20px;
+  border: 2px solid hsla(0, 0%, 100%, 0.7);
+  border-radius: 50px;
+}
+
+.author span {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.author span em {
+  font-style: normal;
+  color: white;
+}
+
+.author span em:hover,
+.card h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: default;
+}
+
+.attribution {
+  margin: auto;
+  padding: 18px 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
